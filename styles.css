@@ -1,0 +1,95 @@
+@font-face {
+  font-family: MyFont;
+  src: url("https://fonts.google.com/specimen/Roboto");
+}
+
+:root {
+  --Grey: hsl(231, 7%, 60%);
+  --DarkSlateGrey: hsl(234, 29%, 20%);
+  --CharcoalGrey: hsl(235, 18%, 26%);
+  --White: hsl(0, 0%, 100%);
+}
+
+* {
+  box-sizing: border-box;
+  font-size: 12px;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Roboto";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--DarkSlateGrey);
+  background-color: var(--CharcoalGrey);
+}
+
+.container {
+  display: flex;
+  width: 680px;
+  background-color: var(--White);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.left {
+  width: 55%;
+  padding-left: 20px;
+}
+.left h1 {
+  font-family: "Roboto";
+  font-size: 50px;
+  font-weight: 700;
+  color: var(--DarkSlateGrey);
+}
+
+.left ul li {
+  list-style-image: url(./public/assets/images/icon-list.svg);
+  font-size: inherit;
+  margin-bottom: 10px;
+}
+
+.right {
+  width: 45%;
+  padding-left: 30px;
+}
+
+.right img {
+  width: 100%;
+}
+
+.left .form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 300px;
+}
+
+.left .form label {
+  margin-bottom: 10px;
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--DarkSlateGrey);
+  font-family: "Roboto";
+}
+
+.left .form input,
+button {
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-family: inherit;
+}
+
+.left .form input {
+  outline: none;
+  border: 1px solid var(--Grey);
+}
+
+.left .form button {
+  background-color: var(--DarkSlateGrey);
+  color: var(--White);
+  font-size: small;
+  font-weight: 400;
+}
